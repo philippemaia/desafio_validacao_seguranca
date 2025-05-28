@@ -49,10 +49,10 @@ import java.util.UUID;
 @Configuration
 public class AuthorizationServerConfig {
 
-	@Value("${security.client-id}")
+	@Value("${security.oauth2.client.client-id}")
 	private String clientId;
 
-	@Value("${security.client-secret}")
+	@Value("${security.oauth2.client.client-secret}")
 	private String clientSecret;
 
 	@Value("${security.jwt.duration}")
